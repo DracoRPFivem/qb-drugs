@@ -95,13 +95,22 @@ Config.Products = {
         slot = 10,
         minrep = 180,
     },
+    [11] = {
+        name = "heroin",
+        price = 15,
+        amount = 150,
+        info = {},
+        type = "item",
+        slot = 11,
+        minrep = 180,
+    },
 }
 
 -- Selling Config
 Config.SuccessChance = 50
 Config.ScamChance = 25
 Config.RobberyChance = 25
-Config.MinimumDrugSalePolice = 0
+Config.MinimumDrugSalePolice = 2
 
 Config.CornerSellingDrugsList = {
     "weed_white-widow",
@@ -112,7 +121,8 @@ Config.CornerSellingDrugsList = {
     "weed_ak47",
     "crack_baggy",
     "cokebaggy",
-    "meth"
+    "meth",
+    "heroin"
 }
 
 Config.DrugsPrice = {
@@ -152,10 +162,14 @@ Config.DrugsPrice = {
         min = 18,
         max = 40,
     },
+    ["heroin"] = {
+        min = 200,
+        max = 450,
+    },
 }
 
 -- Delivery Config
-Config.UseMarkedBills = false -- true for marked bills, false for cash
+Config.UseMarkedBills = true -- true for marked bills, false for cash
 Config.DeliveryRepGain = 1 -- amount of rep gained per delivery
 Config.DeliveryRepLoss = 1 -- amount of rep lost if delivery wrong or late
 Config.PoliceDeliveryModifier = 2 -- amount to multiply active cop count by
